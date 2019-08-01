@@ -1,0 +1,24 @@
+{
+  "name": "vote-ninja",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": "git@github.com:open-source-miami/vote-ninja.git",
+  "author": "AndresMurguido001 <dre.murguido@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/graphql": "^14.2.3",
+    "@types/node": "^12.6.8",
+    "lerna": "^3.16.4",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "graphql": "^14.4.2"
+  },
+  "scripts": {
+    "build": "lerna run build"
+  }
+}
