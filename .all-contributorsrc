@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "AndresMurguido001",
+      "name": "AndresMurguido001",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/34611135?v=4",
+      "profile": "https://github.com/AndresMurguido001",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "vote-ninja",
+  "projectOwner": "open-source-miami",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
