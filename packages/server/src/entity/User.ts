@@ -56,3 +56,15 @@ export class RegisterInputs {
     @IsString()
     lastName: string
 }
+
+@ObjectType()
+export class LoginResponse {
+    @Field(() => Boolean)
+    ok: boolean
+
+    @Field(() => String)
+    token: string
+
+    @Field(() => String)
+    refreshToken: string
+}

@@ -19,6 +19,10 @@
     "graphql": "^14.4.2"
   },
   "scripts": {
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "start": "lerna run start --scope={@voteNinja/server, @voteNinja/web}",
+    "test": "lerna run test",
+    "diff": "lerna diff",
+    "start:web": "lerna run start --scope=@voteNinja/web"
   }
 }
