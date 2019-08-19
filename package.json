@@ -20,9 +20,8 @@
   },
   "scripts": {
     "build": "lerna run build",
-    "start": "lerna run start --scope={@voteNinja/server, @voteNinja/web}",
+    "start": "lerna run start --stream",
     "test": "lerna run test",
-    "diff": "lerna diff",
-    "start:web": "lerna run start --scope=@voteNinja/web"
+    "diff": "lerna diff"
   }
 }

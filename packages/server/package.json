@@ -1,7 +1,6 @@
 {
    "name": "@vote-ninja/server",
    "version": "0.0.0",
-   "private": true,
    "description": "Awesome project developed with TypeORM.",
    "devDependencies": {
       "@types/dotenv": "^6.1.1",
