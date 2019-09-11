@@ -1,57 +1,30 @@
 import * as React from "react";
-import { Flex, Typography, Button } from "@vote-ninja/component-library";
+import { Typography } from "@vote-ninja/component-library";
+import { FlexCenteredContainer, VoteNinjaButton } from "./shared/containers";
 
-export default () => {
+interface WelcomeProps {
+  setLoading(event: React.MouseEvent<HTMLButtonElement>): void
+}
+
+export default ({ setLoading }: WelcomeProps) => {
   return (
-    <Flex
-      justifyContent="space-between"
-      flexDirection="column"
-      alignContent="center"
-      height="50%"
-      style={{ textAlign: "center" }}
-    >
-      <Typography variant="h1" fontSize="3rem">
-        Vote Ninja
+    <FlexCenteredContainer style={{ background: "linear-gradient(180deg, #154A70 0%, rgba(255, 255, 255, 0) 100%)" }}>
+        <Typography variant="h1" fontSize="5rem" mb="0" fontFamily="Mouse Memoirs">
+          Vote Ninja
       </Typography>
-      <Typography variant="span">
-        Some decisions are best made together
+        <Typography variant="span" mb="2rem">
+          Some decisions are best made together
       </Typography>
-      <Typography variant="p">Start a poll, or a discussion</Typography>
-      <Button
-        border="1px solid #fff"
-        background="#4dafff"
-        width="100%"
-        height="3rem"
-        borderRadius="3px"
-      >
-        <Typography
-          variant="span"
-          fontFamily="Roboto"
-          fontSize="1rem"
-          color="#fff"
-        >
-          Create
-        </Typography>
-      </Button>
-      <Typography variant="p">
-        Search for an existing poll or discussion
+        <Typography variant="p">Start a poll, or a discussion</Typography>
+      <VoteNinjaButton buttonColor="#4dafff" onClick={setLoading}>
+        Create
+      </VoteNinjaButton>
+        <Typography variant="p">
+          Search for an existing poll or discussion
       </Typography>
-      <Button
-        border="1px solid #fff"
-        background="#c0325c"
-        width="100%"
-        height="3rem"
-        borderRadius="3px"
-      >
-        <Typography
-          variant="span"
-          fontFamily="Roboto"
-          fontSize="1rem"
-          color="#fff"
-        >
-          Search
-        </Typography>
-      </Button>
-    </Flex>
+      <VoteNinjaButton buttonColor="#c0325c">
+        Search
+      </VoteNinjaButton>
+      </FlexCenteredContainer>
   );
 };

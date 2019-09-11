@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Mouse+Memoirs&display=swap');
+
 .App {
   text-align: center;
 }
@@ -30,4 +32,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  font-family: 'Mouse Memoirs', sans-serif;
 }
