@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Flex, Box, Button, Typography } from "@vote-ninja/component-library";
+import styled from "styled-components";
 
 
 export const FlexCenteredContainer = ({ children, style }: React.PropsWithChildren<{ style?: React.CSSProperties }>) => {
@@ -14,7 +15,7 @@ export const FlexCenteredContainer = ({ children, style }: React.PropsWithChildr
             <Box
                 width="350px"
                 height="400px"
-                style={{ textAlign: "center", color: "#fff" }}
+                style={{ textAlign: "center", color: "#fff", position: "relative" }}
             >
                 {children}
             </Box>
@@ -23,21 +24,23 @@ export const FlexCenteredContainer = ({ children, style }: React.PropsWithChildr
 }
 
 interface BtnProps extends React.HTMLAttributes<HTMLButtonElement> {
-    buttonColor: string
+    background: string
     children: any
 }
-export const VoteNinjaButton: React.FC<BtnProps> = ({ children, buttonColor, ...props }) => {
+
+const CustomButton = styled(Button)<BtnProps>`
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+`
+
+export const VoteNinjaButton: React.FC<BtnProps> = ({ children, background, ...props }) => {
     return (
-        <Button
+        <CustomButton
           border="none"
-          background={buttonColor}
+          background={background}
           width="100%"
           height="3rem"
           borderRadius="3px"
-          style={{
-            mixBlendMode: "normal",
-            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
-          }}
           {...props}
         >
           <Typography
@@ -48,6 +51,6 @@ export const VoteNinjaButton: React.FC<BtnProps> = ({ children, buttonColor, ...
           >
             {children}
         </Typography>
-        </Button>
+        </CustomButton>
     )
 }

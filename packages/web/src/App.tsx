@@ -1,19 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Flex } from "@vote-ninja/component-library";
 import "./App.css";
 import Welcome from "./components/Welcome";
-import Loading from "./components/Loading";
 
 
 
 
 const App = () => {
-  const [isLoading, setLoading] = useState(false);
-
-  const handleLoad = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    setLoading(!isLoading)
-  }
 
   return (
     <Flex
@@ -21,9 +14,11 @@ const App = () => {
       justifyContent="center"
       flexDirection="column"
       height="100vh"
+      style={{
+        background: "linear-gradient(180deg, #154A70 0%, rgba(255, 255, 255, 0) 100%)"
+      }}
     >
-      <Welcome setLoading={handleLoad} />
-      <Loading isLoading={isLoading} />
+      <Welcome />
     </Flex>
   );
 };
