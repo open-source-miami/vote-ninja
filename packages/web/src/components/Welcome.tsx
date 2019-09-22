@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Typography } from "@vote-ninja/component-library";
+import { Typography } from "@osmiami/component-library";
 import { FlexCenteredContainer, VoteNinjaButton } from "./shared/containers";
 import Loading from "./Loading";
 import Search from "./Search";
@@ -20,7 +20,7 @@ export default () => {
   return (
     <div style={{ display: "flex", justifyContent: "center", overflow: "hidden", width: "400px", position: "relative" }}>
     <FlexCenteredContainer style={{ position: "relative" }}>
-        <Typography variant="h1" fontSize="5rem" mb="0" fontFamily="Mouse Memoirs">
+        <Typography variant="h1" fontSize="5rem" mb="0" fontFamily="Roboto">
           Vote Ninja
       </Typography>
         <Typography variant="span" mb="2rem">
