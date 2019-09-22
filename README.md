@@ -1,5 +1,5 @@
 # vote-ninja
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 Sometimes we have too many options to choose, so lets slash through them.
 
 ## Contributors ✨
@@ -11,6 +11,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/AndresMurguido001"><img src="https://avatars2.githubusercontent.com/u/34611135?v=4" width="100px;" alt="AndresMurguido001"/><br /><sub><b>AndresMurguido001</b></sub></a><br /><a href="#infra-AndresMurguido001" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/open-source-miami/vote-ninja/commits?author=AndresMurguido001" title="Tests">⚠️</a> <a href="https://github.com/open-source-miami/vote-ninja/commits?author=AndresMurguido001" title="Code">💻</a></td>
+    <td align="center"><a href="http://sherwino.co"><img src="https://avatars2.githubusercontent.com/u/2348227?v=4" width="100px;" alt="Sherwino"/><br /><sub><b>Sherwino</b></sub></a><br /><a href="https://github.com/open-source-miami/vote-ninja/commits?author=sherwino" title="Code">💻</a> <a href="#design-sherwino" title="Design">🎨</a></td>
   </tr>
 </table>
 
