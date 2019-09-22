@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex } from "@vote-ninja/component-library";
+import { Flex } from "@osmiami/component-library";
 import "./App.css";
 import Welcome from "./components/Welcome";
 

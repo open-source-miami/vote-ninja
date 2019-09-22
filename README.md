@@ -27,7 +27,7 @@ Setting up this repo will require a few steps:
 4. Make sure `packages/component-library/package.json` has the correct *name* attribute and *start* script:
 ```js
   {
-    "name": "@vote-ninja/component-library"
+    "name": "@osmiami/component-library"
     "scripts": {
       "start": "tsc -w"
     }

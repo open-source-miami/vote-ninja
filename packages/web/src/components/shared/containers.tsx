@@ -1,5 +1,6 @@
 import * as React from "react"
-import { Flex, Box, Button, Typography } from "@vote-ninja/component-library";
+import Button from "../Button"
+import { Flex, Box, Typography } from "@osmiami/component-library";
 import styled from "styled-components";
 
 
@@ -22,7 +23,6 @@ export const FlexCenteredContainer = ({ children, style }: React.PropsWithChildr
         </Flex>
     );
 }
-
 interface BtnProps extends React.HTMLAttributes<HTMLButtonElement> {
     background: string
     children: any
