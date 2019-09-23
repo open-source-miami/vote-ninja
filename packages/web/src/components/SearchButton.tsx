@@ -53,7 +53,7 @@ const SearchSubmit = styled.button`
     font-size: 1rem;
 `
 
-const Search: React.FC<SearchProps> = ({ isSearching }: SearchProps) => {
+const SearchButton: React.FC<SearchProps> = ({ isSearching }: SearchProps) => {
     return (
         <SearchContainer isSearching={isSearching}>
             <SearchForm isSearching={isSearching}>
@@ -64,4 +64,4 @@ const Search: React.FC<SearchProps> = ({ isSearching }: SearchProps) => {
     )
 }
 
-export default Search;
+export default SearchButton;

@@ -1,10 +1,4 @@
-import * as React from "react"
 import styled, { keyframes, css } from "styled-components";
-// import console = require("console");
-
-interface IProps {
-    isLoading: boolean
-}
 
 const jump = keyframes`
 0% {
@@ -17,7 +11,7 @@ const jump = keyframes`
 }
 `
 
-const LoadingContainer = styled.div<IProps>`
+export const LoadingContainer = styled.div<{ isLoading: boolean }>`
     background-color: rgba(0, 0, 0, 0.8);
     height: 100vh;
     display: block;
@@ -60,27 +54,3 @@ const LoadingContainer = styled.div<IProps>`
     }
 `;
 
-const Loading: React.FC<IProps> = ({ isLoading }: IProps) => {
-    const loader = React.useRef<HTMLSpanElement>(null);
-    
-    if (loader.current && loader.current.textContent) {
-
-        loader.current.innerHTML = loader.current.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-        const letters = loader.current.textContent.length;
-
-        for (let i = 0; i < letters; i++) {
-            let ltr = (loader.current.children as HTMLCollectionOf<HTMLSpanElement>)[i]
-            ltr.style.animationDelay = `${500 + (50 * i)}ms`;
-        }
-    }
-    return (
-        <LoadingContainer isLoading={isLoading}>
-            <div>Lets create a poll!</div>
-            <span className="letters" ref={loader}>
-                Loading...
-            </span>
-        </LoadingContainer>
-    )
-}
-
-export default Loading;
